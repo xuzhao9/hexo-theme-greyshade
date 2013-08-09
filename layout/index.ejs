@@ -1,0 +1,24 @@
+<div itemscope itemtype="http://schema.org/Blog">
+<% page.posts.each(function(item){ %>
+  <article class="post" itemprop="blogPost" itemscope
+  itemtype=="http://schema.org/BlogPosting">
+  <%- partial('_partial/article', {item: item, index: true}) %>
+  </article>
+<% }); %>
+</div>
+
+<nav id="pagenavi">
+    <% if(page.prev){ %>
+        <a href="<%- config.root %><%- page.prev_link %>" class="prev">
+          <%= __('prev') %>
+        </a>
+    <% } %>
+    <% if(page.next){ %>
+        <a href="<%- config.root %><%- page.next_link %>" class="next">
+          <%= __('next') %>
+        </a>
+    <% } %>
+    <div class="center">
+      <a href="<%- theme.menu.Archives %>">Blog Archives</a>
+    </div>
+</nav>

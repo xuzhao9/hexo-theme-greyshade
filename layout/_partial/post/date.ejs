@@ -1,0 +1,19 @@
+<div class="date">
+<% if(item.date) { %>
+<time datetime="<%= item.date.toDate().toISOString() %>"
+      <% if(item.updated) { %>
+      data-updated="true"
+      <% } %> itemprop="datePublished">
+  <%= item.date.format(config.date_format) %>
+</time>
+<% } %>
+
+<% var moment_updated = moment(item.updated); %>
+<% var same_day = moment_updated.isSame(item.date, 'day'); %>
+
+<% if(item.updated && !same_day) { %>
+<time datetime="<%= item.updated.toDate().toISOString() %>" class="updated" itemprop="dateModified">
+  Updated <%= item.updated.format(config.date_format) %>
+</time>
+<% } %>
+</div>

@@ -1,0 +1,20 @@
+menu:
+  Home: /
+  Archives: archives
+
+excerpt_link: Continue Reading →
+
+fancybox: true
+
+social:
+  twitter: true
+  github: true
+  rss: true
+
+twitter:
+  username: nuklly
+
+github:
+  username: nuklly
+
+rss:

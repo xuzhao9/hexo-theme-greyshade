@@ -1,0 +1,37 @@
+
+<%
+var title = '';
+if (page.category) title = page.category;
+if (page.tag) title = page.tag;
+if (page.archive) title = __('archive_a');
+%>
+
+<div itemscope itemtype="http://schema.org/Blog">
+  <% var year = '';
+     page.posts.each(function(item){ %>
+    <% var post_year = moment(item.date).year() %>
+    <% if (!(post_year == year)) {
+       year = post_year;
+       show = true; %>
+    <section class="archives"><h1 class="year"><%= year %></h1>
+    <% } %>
+    <% var post_year = moment(item.date).year();
+       var show = false; %>
+      <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+        <div class="meta">
+          <% if(config.disqus_short_name && item.comments) { %>
+            <span class="comments">
+              <a href="<%- config.root %><%- item.path %>#disqus_thread">Comments</a>
+            </span>
+          <% } %>
+        </div>
+        <h1 class="title" itemprop="name">
+          <a href="<%- config.root %><%- item.path %>"><%= item.title %></a>
+        </h1>
+    </article>
+    <% if (show) { %>
+    </section>
+    <% show = false; %>
+    <% } %>
+  <% }); %>
+</div>

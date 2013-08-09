@@ -1,0 +1,38 @@
+<div class="profilepic">
+  <script src="<%- config.root %>js/md5.js"></script>
+  <script type="text/javascript">
+    $(function(){
+	$('.profilepic').append(
+          "<img src='http://www.gravatar.com/avatar/"
+          + MD5("<%- config.email %>")
+          + "?s=160' alt='Profile Picture' style='width: 160px;' />");
+    });
+  </script>
+</div><!-- profilepic -->
+<h1><a href="<%- config.root %>"><%= config.author %></a></h1>
+<p class="subtitle"><%= config.title %></p>
+<nav id="main-nav">
+  <% if(config.description) { %>
+  <section class="aboutme">
+    <p>
+      <%= config.subtitle %>
+    </p>
+  <% } %>
+  </section>
+</nav><!-- main-nav -->
+<nav id="sub-nav">
+  <div class="social">
+    <% if(theme.social.twitter) { %>
+      <a class="twitter" href="http://twitter.com/<%- theme.twitter.username %>"
+         title="Twitter">Twitter</a>
+    <% } %>
+    <% if(theme.social.github) { %>
+      <a class="github" href="http://github.com/<%- theme.github.username %>"
+         title="Github">Github</a>
+    <% } %>
+    <% if(theme.social.rss) { %>
+        <a class="rss" href="/" title="RSS">RSS</a>
+    <% } %>
+  </div>
+</nav><!-- sub-nav -->
+

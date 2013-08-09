@@ -1,0 +1,48 @@
+square(property)
+  width property
+  height property
+
+user-select(select)
+  -moz-user-select select
+  -khtml-user-select select
+  -webkit-user-select select
+  -o-user-select select
+  user-select select
+
+border-shadow(top = color-gray05, bottom = color-gray04)
+  border-top 1px solid top
+  border-bottom 1px solid bottom
+
+center(width, height)
+  position absolute
+  top 50%
+  left 50%
+  margin-left (width/(-2))
+  margin-top (height/(-2))
+  width width
+  height height
+
+// warpped compress mixins
+
+inline-block()
+  display -moz-inline-stack
+  display inline-block
+  vertical-align middle
+  *vertical-align auto
+  zoom 1
+  *display inline
+
+link-colors(normal, hover = false, active = false, visited = false, focus = false)
+  color normal
+  if hover
+    &:hover
+      color hover
+  if active
+    &:active
+      color active
+  if visited
+    &:visited
+      color visited
+  if focus
+    &:focus
+      color focus

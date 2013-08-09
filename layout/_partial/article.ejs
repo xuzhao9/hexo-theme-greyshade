@@ -1,0 +1,25 @@
+<% if(index) { %>
+	<div class="meta">
+          <%- partial('post/date') %>
+          <%- partial('post/tag') %>
+	</div>
+        <h1 class="title" itemprop="name">
+          <a href="<%- config.root %><%- item.path %>" itemprop="url">
+            <%= item.title %></a>
+        </h1>
+        <div class="entry-content" itemprop="articleBody">
+          <% if (item.excerpt){ %>
+            <%- item.excerpt %>
+          <% } else { %>
+            <%- item.content %>
+          <% } %>
+          <% if(item.excrept) { %>
+            <a href="<%- item.link %>" class="more-link">
+              <%= theme.excerpt_link %>
+            </a>
+          <% } %>
+        </div>
+<% } else { %>
+        <h1 class="title" itemprop="name"><%= item.title %></h1>
+      	<div class="entry-content" itemprop="articleBody"><%- item.content %></div>
+<% } %>
