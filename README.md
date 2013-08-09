@@ -24,7 +24,10 @@ to see if it works. Enjoy it!
 ## TODO List
 
 - [Base] Font polish
+- [Base] Disquz support
+- [Base] Page support
 - [Social] RSS support
 - [Social] Sina weibo support
-- [Syntax] Inline & block code and pic support, Mathjax support
-- [Plugin] Disquz support
+- [Syntax] Inline & block code and pic support
+- [Plugin] Fancybox support
+- [Plugin] Mathjax support
