@@ -1,3 +1,10 @@
+<%
+   var attr = '';
+   if(type =="archive") {
+     attr = 'span';
+   } else if (type == "index") {
+     attr = 'div';
+   } %>
 <% if(item.tags && item.tags.length) { %>
  <%
   var tags = [];
@@ -5,7 +12,7 @@
     tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
   });
  %>
- <div class="tags">
+ <<%- attr %> class="tags">
    <%- tags.join(', ') %>
- </div>
+ </<%- attr %>>
 <% } %>

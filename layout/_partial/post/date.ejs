@@ -1,10 +1,20 @@
-<div class="date">
+<%
+   var format = '';
+   var attr = '';
+   if(type =="archive") {
+     attr = 'span';
+     format = 'MMM DD';
+   } else if (type == "index") {
+     attr = 'div';
+     format = config.date_format;
+   } %>
+<<%- attr %> class="date">
 <% if(item.date) { %>
 <time datetime="<%= item.date.toDate().toISOString() %>"
       <% if(item.updated) { %>
       data-updated="true"
       <% } %> itemprop="datePublished">
-  <%= item.date.format(config.date_format) %>
+  <%= item.date.format(format) %>
 </time>
 <% } %>
 
@@ -13,7 +23,7 @@
 
 <% if(item.updated && !same_day) { %>
 <time datetime="<%= item.updated.toDate().toISOString() %>" class="updated" itemprop="dateModified">
-  Updated <%= item.updated.format(config.date_format) %>
+  Updated <%= item.updated.format(config.format) %>
 </time>
 <% } %>
-</div>
+</<%- attr %>>

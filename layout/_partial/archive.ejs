@@ -19,6 +19,9 @@ if (page.archive) title = __('archive_a');
        var show = false; %>
       <article itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="meta">
+          <%- partial('post/date', {item: item, type: "archive"}) %>
+          <br>
+          <%- partial('post/tag', {item: item, type: "archive"}) %>
           <% if(config.disqus_short_name && item.comments) { %>
             <span class="comments">
               <a href="<%- config.root %><%- item.path %>#disqus_thread">Comments</a>

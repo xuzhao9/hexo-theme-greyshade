@@ -24,12 +24,7 @@ to see if it works. Enjoy it!
 ## TODO List
 
 - [Base] Font polish
-- [Archive] Tag and date support
 - [Social] RSS support
 - [Social] Sina weibo support
 - [Syntax] Inline & block code and pic support, Mathjax support
 - [Plugin] Disquz support
-
-## License
-
-MIT: http://sm.mit-license.org

@@ -1,7 +1,7 @@
 <% if(index) { %>
 	<div class="meta">
-          <%- partial('post/date') %>
-          <%- partial('post/tag') %>
+          <%- partial('post/date', {type: "index"}) %>
+          <%- partial('post/tag', {type: "index"}) %>
 	</div>
         <h1 class="title" itemprop="name">
           <a href="<%- config.root %><%- item.path %>" itemprop="url">
