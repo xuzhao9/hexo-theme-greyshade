@@ -1,9 +1,6 @@
 <div itemscope itemtype="http://schema.org/Blog">
 <% page.posts.each(function(item){ %>
-  <article class="post" itemprop="blogPost" itemscope
-  itemtype=="http://schema.org/BlogPosting">
-  <%- partial('_partial/article', {item: item, index: true}) %>
-  </article>
+  <%- partial('_partial/post', {item: item, index: true}) %>
 <% }); %>
 </div>
 

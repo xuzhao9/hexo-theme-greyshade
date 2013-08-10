@@ -18,3 +18,10 @@ github:
   username: nuklly
 
 rss:
+
+addit:
+  facebook: false
+  twitter: true
+  gplus: true
+  pinit: false
+  publid: ra-5206464767bea141

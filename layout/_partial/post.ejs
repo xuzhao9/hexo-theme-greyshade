@@ -1,0 +1,12 @@
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <%- partial('article', {item: item, index: index})%>
+</article>
+<% if(!page.sharing) { %>
+  <%- partial('post/sharing') %>
+<% } %>
+<% if(config.disqus_shortname && page.comments) { %>
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><%- partial('post/disqus_thread')%></div>
+</section>
+<% } %>
