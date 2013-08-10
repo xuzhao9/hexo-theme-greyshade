@@ -24,7 +24,6 @@ to see if it works. Enjoy it!
 ## TODO List
 
 - [Base] Font polish
-- [Base] Disquz support
 - [Base] Page support
 - [Social] RSS support
 - [Social] Sina weibo support
