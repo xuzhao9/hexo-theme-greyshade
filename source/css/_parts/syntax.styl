@@ -1,0 +1,220 @@
+// gist syntax
+pre-bg = color-gray04
+pre-border = color-gray03
+.entry-content .gist
+  // background: pre-bg
+  color color-gray01
+  padding 15px 15px 5px 0px
+  margin-top 10px
+  border 1px solid pre-border
+  position relative
+  overflow hidden
+  .gist-file
+    margin 0
+    border none
+    .gist-data
+      background none
+      border none
+      pre
+        font 0.9em font-mono
+        line-height 1.5
+      table
+        background white
+        border none
+      .line-data
+        width 100%
+    .gist-meta
+      font 300 0.9em font-default
+      line-height 1.5
+      margin 0 -16px -6px
+      padding 5px 15px
+      background #ececec
+      a
+        color color-main
+        &:first-of-type
+          position absolute
+          top 5px
+          right 15px
+          z-index 1
+        &:nth-of-type(2)
+          position absolute
+          top 0
+          left 0
+          padding 5px 15px
+          width 100%
+          background #ececec
+
+// code block syntax
+figure.highlight
+  background #eee
+  border 1px solid color-gray04
+  margin-top 15px
+  padding 7px
+  border-radius 2px
+  text-shadow 0 0 1px #fff
+  line-height 1.6
+  overflow auto
+  position relative
+  font-size 0.9em
+  figcaption
+    color #258fb8
+    margin-bottom 10px
+    font-size 1.1em
+    font-weight bold
+    text-shadow 0 0 1px #fff
+    a
+      position absolute
+      right 15px
+  table
+    background white
+    border none
+    margin-top 0
+    border-spacing 0
+  .gutter
+    background color-background
+    padding-left 3px
+    padding-right 7px
+    border-right 1px solid color-gray02
+    font-family font-mono
+    color color-gray02
+    font-size 1.1em
+    line-height 150%
+  .code
+    background none
+    width 100%
+    padding-left 15px
+    border-left 1px solid #fff
+    overflow auto
+    font-family font-mono
+    color color-gray01
+    font-size 1.1em
+    line-height 150%
+  pre
+    background none
+    border none
+    padding 0
+    margin 0
+
+@css{
+pre code {
+  display: block; padding: 0.5em;
+  color: #333;
+  background: #f8f8ff
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .nginx .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #333;
+  font-weight: bold
+}
+
+pre .number,
+pre .hexcolor,
+pre .ruby .constant {
+  color: #099;
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #d14
+}
+
+pre .title,
+pre .id {
+  color: #900;
+  font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .clojure .title,
+pre .subst {
+  font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+  font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .lisp .body {
+  color: #008080
+}
+
+pre .regexp {
+  color: #009926
+}
+
+pre .class {
+  color: #458;
+  font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .lisp .keyword,
+pre .tex .special,
+pre .prompt {
+  color: #990073
+}
+
+pre .built_in,
+pre .lisp .title,
+pre .clojure .built_in {
+  color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold
+}
+
+pre .deletion {
+  background: #fdd
+}
+
+pre .addition {
+  background: #dfd
+}
+
+pre .diff .change {
+  background: #0086b3
+}
+
+pre .chunk {
+  color: #aaa
+}
+}

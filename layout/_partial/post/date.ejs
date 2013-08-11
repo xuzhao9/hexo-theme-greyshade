@@ -7,7 +7,10 @@
    } else if (type == "index") {
      attr = 'div';
      format = config.date_format;
-   } %>
+   } else if (type == "post") {
+     attr = 'div';
+     format = config.date_format;
+   }%>
 <<%- attr %> class="date">
 <% if(item.date) { %>
 <time datetime="<%= item.date.toDate().toISOString() %>"
@@ -21,9 +24,10 @@
 <% var moment_updated = moment(item.updated); %>
 <% var same_day = moment_updated.isSame(item.date, 'day'); %>
 
-<% if(item.updated && !same_day) { %>
+<% if(item.updated && !same_day && type != "index") { %>
+<br>
 <time datetime="<%= item.updated.toDate().toISOString() %>" class="updated" itemprop="dateModified">
-  Updated <%= item.updated.format(config.format) %>
+  Updated on <%= item.updated.format(format) %>
 </time>
 <% } %>
 </<%- attr %>>

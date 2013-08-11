@@ -21,12 +21,18 @@ Do not forget:
 
 to see if it works. Enjoy it!
 
+## Feature
+
+- Responsive design.
+- [Gravator](https://gravatar.com/) profile image support.
+- [Addit](http://www.addthis.com/) sharing shortcut support.
+- [Disqus](http://disqus.com/) comment support.
+
 ## TODO List
 
 - [Base] Font polish
-- [Base] Page support
-- [Social] RSS support
+- [Base] Pagination support
+- [Base] Excerpt support
 - [Social] Sina weibo support
-- [Syntax] Inline & block code and pic support
-- [Plugin] Fancybox support
 - [Plugin] Mathjax support
+- [Plugin] Fancybox support

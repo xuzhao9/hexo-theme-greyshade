@@ -1,1 +1,17 @@
-<%- partial('_partial/article', {item: page, index: false}) %>
+<article class="page">
+  <% if(page.title) { %>
+  <h1 class="title"><%= page.title %></h1>
+  <% } %>
+  <div class="entry-content"><%- page.content %></div>
+</article>
+<% if(page.sharing) { %>
+  <%- partial('_partial/post/sharing') %>
+<% } %>
+<% if(site.disqus_short_name && page.comments) { %>
+<section id="comment">
+    <h1 class="title">Comments</h1>
+    <div id="disqus_thread" aria-live="polite">
+      <%- partial('_partial/post/disqus_thread.html')%>
+    </div>
+</section>
+<% } %>
