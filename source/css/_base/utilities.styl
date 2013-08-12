@@ -46,15 +46,3 @@ link-colors(normal, hover = false, active = false, visited = false, focus = fals
   if focus
     &:focus
       color focus
-
-mix(color1, color2, weight = 50%)
-  p = weight
-  w = (p * 2 - 1)
-  a = (alpha(color1) - alpha(color2))
-  w1 = ((((w * a == (-1)) ? w : (w + a)) / (1 + w * a)) + 1) / 2.0
-  w2 = (1 - w1)
-  r = red(color1) * w1 + red(color2) * w2
-  g = green(color1) * w1 + green(color2) * w2
-  b = blue(color1) * w1 + blue(color2) * w2
-  a = alpha(color1) * p + alpha(color2) * (1 - p)
-  rgba(r, g, b, a)
