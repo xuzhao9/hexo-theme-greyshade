@@ -16,13 +16,11 @@
         <div class="entry-content" itemprop="articleBody">
           <% if (item.excerpt){ %>
             <%- item.excerpt %>
-          <% } else { %>
-            <%- item.content %>
-          <% } %>
-          <% if(item.excrept) { %>
             <a href="<%- item.link %>" class="more-link">
               <%= theme.excerpt_link %>
-            </a>
+            </2a>
+          <% } else { %>
+            <%- item.content %>
           <% } %>
         </div>
 <% } else { %>
