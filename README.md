@@ -27,12 +27,9 @@ to see if it works. Enjoy it!
 - [Gravator](https://gravatar.com/) profile image support.
 - [Addit](http://www.addthis.com/) sharing shortcut support.
 - [Disqus](http://disqus.com/) comment support.
-- [Mathjax](http://www.mathjax.org/) support
+- [Mathjax](http://www.mathjax.org/) support.
 
 ## TODO List
 
 - [Base] Font polish
-- [Base] Pagination support
-- [Base] Excerpt support
-- [Social] Sina weibo support
 - [Plugin] Fancybox support

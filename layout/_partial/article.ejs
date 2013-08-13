@@ -16,7 +16,7 @@
         <div class="entry-content" itemprop="articleBody">
           <% if (item.excerpt){ %>
             <%- item.excerpt %>
-            <a href="<%- item.link %>" class="more-link">
+            <a href="<%- config.root %><%- item.path %>" class="more-link">
               <%= theme.excerpt_link %>
             </2a>
           <% } else { %>
