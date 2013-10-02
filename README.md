@@ -9,8 +9,9 @@ to [Hexo](https://github.com/tommy351/hexo).
 
 Assuming that you have installed Hexo and using light theme.
 
-    cd $hexo/themes
-    git clone https://github.com/nuklly/hexo-theme-greyshade.git greyshade
+    cd $hexo
+    npm i hexo-theme-greyshade
+    ln -s node_modules/hexo-theme-greyshade theme/
 
 then change the value of `theme` field in your `_config.yml` to `greyshade`.
 
@@ -28,8 +29,3 @@ to see if it works. Enjoy it!
 - [Addit](http://www.addthis.com/) sharing shortcut support.
 - [Disqus](http://disqus.com/) comment support.
 - [Mathjax](http://www.mathjax.org/) support.
-
-## TODO List
-
-- [Base] Font polish
-- [Plugin] Fancybox support
