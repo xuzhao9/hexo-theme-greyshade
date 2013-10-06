@@ -32,12 +32,12 @@ to see if it works. Enjoy it!
 
 ## Changelog
 
-### git-master
+### Version 0.0.2
 
 - [Add Feature] Page index support
 - [Removed Feature] Updated date removed
 - [Removed Feature] Site title display
 
-### V0.0.1
+### Version 0.0.1
 
 - Build basical functionalities
