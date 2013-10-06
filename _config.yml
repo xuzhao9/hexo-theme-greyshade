@@ -1,8 +1,10 @@
 menu:
   Home: /
   Archives: archives
+  page:
+    About: about
 
-excerpt_link: Continue Reading →
+excerpt_link: Continue →
 
 mathjax: true
 fancybox: true

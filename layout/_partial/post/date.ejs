@@ -24,10 +24,4 @@
 <% var moment_updated = moment(item.updated); %>
 <% var same_day = moment_updated.isSame(item.date, 'day'); %>
 
-<% if(item.updated && !same_day && type != "index") { %>
-<br>
-<time datetime="<%= item.updated.toDate().toISOString() %>" class="updated" itemprop="dateModified">
-  Updated on <%= item.updated.format(format) %>
-</time>
-<% } %>
 </<%- attr %>>
