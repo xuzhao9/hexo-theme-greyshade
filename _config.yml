@@ -12,12 +12,16 @@ fancybox: true
 social:
   twitter: true
   github: true
+  gplus: true
   rss: true
 
 twitter:
   username:
 
 github:
+  username:
+
+gplus:
   username:
 
 addit:
