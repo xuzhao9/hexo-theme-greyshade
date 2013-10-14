@@ -45,4 +45,10 @@
     <% } %>
   </div>
 </nav><!-- sub-nav -->
-
+<nav id="widget-nav">
+  <div class="widgets">
+    <% theme.widgets.forEach(function(widget){ %>
+      <%- partial('../_widget/' + widget) %>
+    <% }); %>
+  </div>
+</nav><!-- widget-nav -->
