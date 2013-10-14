@@ -4,6 +4,9 @@ menu:
   page:
     About: about
 
+widgets:
+- tag
+
 excerpt_link: Continue →
 
 mathjax: true
