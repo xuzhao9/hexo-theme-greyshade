@@ -11,6 +11,7 @@ excerpt_link: Continue →
 
 mathjax: true
 fancybox: true
+print: true
 
 social:
   twitter: true

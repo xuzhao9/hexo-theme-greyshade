@@ -25,6 +25,9 @@
 <% } else { %>
 	<div class="meta">
           <%- partial('post/date', {type: "post"}) %>
+          <% if(theme.print) { %>
+          <%- partial('post/print', {type: "post"}) %>
+          <% } %>
 	</div>
         <h1 class="title" itemprop="name"><%= item.title %></h1>
       	<div class="entry-content" itemprop="articleBody"><%- item.content %></div>
