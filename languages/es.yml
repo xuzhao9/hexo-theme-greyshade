@@ -10,3 +10,4 @@ archive_a: Archivo
 archive_b: Archivo: %s
 page: Página %d
 recent_posts: Entradas Recientes
+print: Imprimir Entrada
