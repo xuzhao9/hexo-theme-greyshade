@@ -28,6 +28,10 @@
 </nav><!-- main-nav -->
 <nav id="sub-nav">
   <div class="social">
+    <% if(theme.social.gplus) { %>
+      <a class="google" href="http://plus.google.com/<%- theme.gplus.username %>"
+         title="Google+">Google+</a>
+    <% } %>
     <% if(theme.social.twitter) { %>
       <a class="twitter" href="http://twitter.com/<%- theme.twitter.username %>"
          title="Twitter">Twitter</a>
@@ -41,4 +45,10 @@
     <% } %>
   </div>
 </nav><!-- sub-nav -->
-
+<nav id="widget-nav">
+  <div class="widgets">
+    <% theme.widgets.forEach(function(widget){ %>
+      <%- partial('../_widget/' + widget) %>
+    <% }); %>
+  </div>
+</nav><!-- widget-nav -->
