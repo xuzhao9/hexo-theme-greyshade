@@ -7,7 +7,7 @@ prev: Vorherige Seite
 next: Nächste Seite
 comment: Kommentare
 archive_a: Archiv
-archive_b: Archiv: %s
-page: Seite %d
-recent_posts: Neueste Artikel
-print: Beitrag ausdrucken
+archive_b: "Archiv: %s"
+page: "Seite %d"
+recent_posts: "Neueste Artikel"
+print: "Beitrag ausdrucken"
