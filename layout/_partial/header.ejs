@@ -43,6 +43,22 @@
     <% if(theme.social.rss) { %>
         <a class="rss" href="<%- config.root%>atom.xml" title="RSS">RSS</a>
     <% } %>
+    <% if(theme.social.linkedin) { %>
+      <a class="linkedin" href="http://www.linkedin.com/in/<%- theme.linkedin.username %>"
+        title="Linkedin">Linkedin</a>
+      <% } %>
+    <% if(theme.social.facebook) { %>
+      <a class="facebook" href="http://facebook.com/<%- theme.facebook.username %>"
+        title="Facebook">Facebook</a>
+    <% } %>
+    <% if(theme.social.coderwall) { %>
+      <a class="coderwall" href="http://github.com/<%- theme.coderwall.username %>"
+        title="Coderwall">Coderwall</a>
+    <% } %>
+    <% if(theme.social.pinterest) { %>
+      <a class="pinterest" href="http://pinterest.com/<%- theme.pinterest.username %>"
+        title="Pinterest">Pinterest</a>
+    <% } %>
   </div>
 </nav><!-- sub-nav -->
 <nav id="widget-nav">

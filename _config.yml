@@ -18,6 +18,10 @@ social:
   github: true
   gplus: true
   rss: true
+  linkedin: true
+  facebook: true
+  coderwall: true
+  pinterest: true
 
 twitter:
   username:
@@ -26,6 +30,18 @@ github:
   username:
 
 gplus:
+  username:
+
+linkedin:
+  username:
+
+facebook:
+  username:
+
+coderwall:
+  username:
+
+pinterest:
   username:
 
 addit:
